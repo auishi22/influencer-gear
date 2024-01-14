@@ -1,0 +1,235 @@
+/* shared style */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+}
+
+/* nav styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 120px 0px 120px;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    /* margin-right: 34px; */
+}
+
+/* banner styling */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-intro {
+    margin-left: 120px;
+}
+
+.bannerr-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 145px 133px 16px 0px;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 210px;
+    margin-bottom: 16px;
+}
+
+.banner .btn-primary {
+    padding: 10px 24px;
+    border: 0px;
+    border-radius: 41px;
+    background: #E02C6D;
+    margin-bottom: 180px;
+}
+
+.banner-pic {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    padding: 30px 30px 30px 2px;
+    margin-top: 80px;
+    margin-right: 160px;
+    margin-bottom: 100px;
+}
+
+.advertise {
+    display: flex;
+    gap: 60px;
+    margin: 0px 165px 100px;
+}
+
+.main-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 196px 90px;
+}
+
+.box {
+    width: 329px;
+    height: 476px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box img {
+    padding: 14px 17px;
+}
+
+.box h4,
+h5,
+h6,
+p {
+    margin-left: 14px;
+}
+
+.box h4 {
+    color: var(--Text-Gray-900, #18191F);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 7px;
+}
+
+.box h5 {
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.box h6 {
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.box p {
+    color: var(--Gray-50, #787885);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+}
+
+.see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    /* margin: 50px 221px 0px 1144px; */
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-img {
+    margin: 60px 96px 100px 165px;
+}
+
+.feature-details {
+    margin-left: 96px;
+    margin-top: 60px;
+}
+
+.feature-title {
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+.feature-description {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 16px 0px;
+}
+
+.features .btn-primary {
+    padding: 10px 24px;
+    background: #E02C6D;
+    border: 0px;
+}
+
+/* responsive styling */
+/* for mobile device */
+@media screen and (max-width: 576px) {
+    nav,.features{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    nav,
+    .banner-intro, .advertise,.box-container, .feature-img, .feature-details {
+        margin-left: 16px;
+    }
+    nav>ul {
+        gap: 25px;
+    }
+    .bannerr-title {
+        margin-top: 30px;
+    }
+    .advertise{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding:opx  20px;
+    }
+    .box-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-details{
+        /* margin-top: 20px; */
+    }
+
+}
