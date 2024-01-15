@@ -14,7 +14,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 90px 120px 0px 120px;
-    border: 1px solid red;
 }
 
 .nav-title {
